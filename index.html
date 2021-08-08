@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
+    <script src="./assets/java.js"></script>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
+
 <body>
-    
+
+
+    <h1>Password Generator</h1>
+
+    <h2>Choose your options</h2>
+    <div>
+        <span class="checkbox">
+            <input type="checkbox" id="special" />
+            <label for="chekcbox">Include Special Characters</label>
+        </span>
+        <span class="checkbox">
+            <input type="checkbox" id="numbers" />
+            <label for="chekcbox">Include Numbers</label>
+        </span>
+    </div>
+    <div>
+        <label for="number">Enter how many characters you want</label>
+        <input type="number" id="length" class="number-input" />
+    </div>
+
+    <div>
+        <button class="btn" id="generate">Generate!</button>
+    </div>
+
+    <input type="text" id="password" /> <button id="copy">Copy</button>
+
 </body>
+
 </html>
