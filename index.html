@@ -12,31 +12,45 @@
 
 <body>
 
-
     <h1>Password Generator</h1>
-
     <h2>Choose your options</h2>
-    <div>
-        <span class="checkbox">
-            <input type="checkbox" id="special" />
-            <label for="chekcbox">Include Special Characters</label>
-        </span>
-        <span class="checkbox">
-            <input type="checkbox" id="numbers" />
-            <label for="chekcbox">Include Numbers</label>
-        </span>
-    </div>
-    <div>
-        <label for="number">Enter how many characters you want</label>
-        <input type="number" id="length" class="number-input" />
-    </div>
-
-    <div>
-        <button class="btn" id="generate">Generate!</button>
-    </div>
-
-    <input type="text" id="password" /> <button id="copy">Copy</button>
+    <!--password options-->
     
+    <div class="setting">
+        <div class=setting>
+            <input type="checkbox" id="lowercase" checked />
+            <label for="lowercase">Include Lowercase</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="uppercase" checked/>
+            <label for="uppercase">Include Uppercase</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="numbers" checked/>
+            <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="special" checked/>
+            <label for="special">Include Special Characters</label>
+        </div>
+    
+        <div class="setting">
+            <label for="length">Length</label>
+            <input type="number" id="length" min="8" max="50"/>
+        </div>
+    </div>
+    
+    
+    <div>
+        <button class="btn" id="generate">
+            Generate!
+        </button>
+    </div>
+
+    <div class="result-container">
+        <span id="result"></span>
+        
+    </div>
     <script src="./assets/java.js"></script>
 </body>
 
